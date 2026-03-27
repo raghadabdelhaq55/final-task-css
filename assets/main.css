@@ -249,3 +249,47 @@ nav ul li a:hover {
   line-height: 1.6;
   color: var(--gray-500);
 }
+
+.portfolio-item {
+  position: relative;
+}
+
+.portfolio-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(249, 116, 22, 0.65);
+  opacity: 0;
+  transition: 0.3s ease;
+  z-index: 1;
+}
+
+.portfolio-item img {
+  display: block;
+  width: 100%;
+}
+
+.portfolio-content {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  z-index: 2;
+  transition: 0.3s ease;
+}
+
+.portfolio-category {
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 10px;
+}
+
+.portfolio-title {
+  font-size: 32px;
+}
+
+.portfolio-item:hover::before {
+  opacity: 1;
+}
+
+.portfolio-item:hover .portfolio-content {
+  opacity: 1;
+}
