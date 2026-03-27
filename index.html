@@ -9,16 +9,26 @@
   </head>
   <body>
     <header class="hero overlay bg-cover vh-100 position-relative text-white">
-      <nav class="position-absolute top-0 left-0 w-100 z-999">
+      <nav class="position-fixed top-0 left-0 w-100 z-999 navbar-white">
         <div class="container">
-          <div class="row position-fixed hero-nav pt-32 pb-32">
-            <a href="#" class="text-white fw-bold fs-24">Start Bootstrap</a>
+          <div class="row hero-nav pt-32 pb-32">
+            <a href="#" class="fw-bold fs-24 nav-logo">Start Bootstrap</a>
 
             <ul class="d-flex gap-30 items-center hero-menu">
-              <li><a href="#" class="text-white fw-bold fs-16">About</a></li>
-              <li><a href="#" class="text-white fw-bold fs-16">Services</a></li>
-              <li><a href="#" class="text-white fw-bold fs-16">Portfolio</a></li>
-              <li><a href="#" class="text-white fw-bold fs-16">Contact</a></li>
+              <li>
+                <a href="#about" class="fw-bold fs-16 nav-link active">About</a>
+              </li>
+              <li>
+                <a href="#services" class="fw-bold fs-16 nav-link">Services</a>
+              </li>
+              <li>
+                <a href="#portfolio" class="fw-bold fs-16 nav-link"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="fw-bold fs-16 nav-link">Contact</a>
+              </li>
             </ul>
 
             <img src="./assets/IMG/menu.svg" alt="Menu" class="menu-icon" />
@@ -27,14 +37,18 @@
       </nav>
 
       <div class="container h-100">
-        <div class="d-flex flex-column justify-center items-center text-center h-100 hero-content pt-40">
+        <div
+          class="d-flex flex-column justify-center items-center text-center h-100 hero-content pt-40"
+        >
           <h1 class="hero-title fw-bold">
             Your Favorite Place for Free
             <br />
             Bootstrap Themes
           </h1>
 
-          <span class="hero-line mt-30 mb-30 d-block w-70 h-4 rounded-lg bg-primary"></span>
+          <span
+            class="hero-line mt-30 mb-30 d-block w-70 h-4 rounded-lg bg-primary"
+          ></span>
 
           <p class="hero-desc fs-20 lh-16">
             Start Bootstrap can help you build better websites using the
@@ -42,11 +56,101 @@
             strings attached!
           </p>
 
-          <a href="#" class="btn btn-primary mt-40 text-uppercase fs-16 fw-bold">
+          <a
+            href="#about"
+            class="btn btn-primary mt-40 text-uppercase fs-16 fw-bold"
+          >
             Find Out More
           </a>
         </div>
       </div>
     </header>
+
+    <section id="about" class="about-section bg-primary text-white">
+      <div class="container">
+        <div
+          class="about-content d-flex flex-column justify-center items-center text-center"
+        >
+          <h2 class="about-title fw-bold">We've got what you need!</h2>
+
+          <span class="about-line d-block mt-20 mb-30"></span>
+
+          <p class="about-desc fs-20 lh-16">
+            Start Bootstrap has everything you need to get your new website up
+            and running in no time! Choose one of our open source, free to
+            download, and easy to use themes! No strings attached!
+          </p>
+
+          <a
+            href="#services"
+            class="btn about-btn mt-40 fw-bold text-uppercase"
+          >
+            Get Started!
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="services"
+      class="services-section section bg-white text-center"
+    >
+      <div class="container">
+        <div class="services-heading">
+          <h2 class="services-title fw-bold">At Your Service</h2>
+          <span class="services-line d-block mt-20 mb-40"></span>
+        </div>
+
+        <div class="grid-4 services-grid ">
+          <div class="service-card">
+            <img
+              src="./assets/IMG/diamond-removebg-preview.png"
+              alt="Diamond Icon"
+              class="service-icon"
+            />
+            <h3 class="service-card-title">Sturdy Themes</h3>
+            <p class="service-card-desc">
+              Our themes are updated regularly to keep them bug free!
+            </p>
+          </div>
+
+          <div class="service-card">
+            <img
+              src="./assets/IMG/computer-removebg-preview.png"
+              alt="Laptop Icon"
+              class="service-icon"
+            />
+            <h3 class="service-card-title">Up to Date</h3>
+            <p class="service-card-desc">
+              All dependencies are kept current to keep things fresh.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <img
+              src="./assets/IMG/globe-removebg-preview.png"
+              alt="Globe Icon"
+              class="service-icon"
+            />
+            <h3 class="service-card-title">Ready to Publish</h3>
+            <p class="service-card-desc">
+              You can use this design as is, or you can make changes!
+            </p>
+          </div>
+
+          <div class="service-card">
+            <img
+              src="./assets/IMG/heart-removebg-preview.png"
+              alt="Heart Icon"
+              class="service-icon"
+            />
+            <h3 class="service-card-title">Made with Love</h3>
+            <p class="service-card-desc">
+              Is it really open source if it's not made with love?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
